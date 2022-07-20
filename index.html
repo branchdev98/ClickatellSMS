@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+<div class="container">
+  <h2>SMS sender</h2>
+  <p>Please input phone number and message content.</p>
+  <form>
+    <div class="form-group">
+      <label for="usr">Phone Number:</label>
+      <input type="number" placeholder="447883200468" class="form-control" id="phone" required>
+    </div>
+    <div class="form-group">
+      <label for="pwd">SMS content</label>
+      <textarea  class="form-control" rows="5" id="content" required></textarea>
+    </div>
+    <button type="button" class="btn btn-default">Submit</button>
+  </form>
+</div>
+<script src="sendsms.js"></script>
+</body>
+
+</html>
